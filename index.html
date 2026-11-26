@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS GAMING | Level Up Your World</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">NEXUS<span>_</span></a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="searchBtn" aria-label="Search">⌕</button>
+            <button id="favoritesBtn" aria-label="Favorites">♡ <span id="favoriteCount">0</span></button>
+            <button id="cartBtn" aria-label="Shopping cart">🛒 <span id="cartCount">0</span></button>
+            <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+        </div>
+
+    </header>
+
+    <!-- Search Bar -->
+
+    <div class="search-bar" id="searchBar">
+        <input type="text" id="searchInput" placeholder="Search your favorite game...">
+        <button id="closeSearch">✕</button>
+    </div>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">WELCOME TO THE NEXT LEVEL</span>
+
+            <h1>
+                ENTER THE<br>
+                <span>GAMEVERSE.</span>
+            </h1>
+
+            <p>
+                Explore legendary games, discover new adventures
+                and experience gaming like never before.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#games" class="primary-btn">EXPLORE GAMES ↗</a>
+                <a href="#about" class="secondary-btn">DISCOVER MORE</a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <h3>100+</h3>
+                    <p>GAMES</p>
+                </div>
+
+                <div>
+                    <h3>50K+</h3>
+                    <p>PLAYERS</p>
+                </div>
+
+                <div>
+                    <h3>24/7</h3>
+                    <p>GAMING</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-glow"></div>
+            <img
+                src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1000"
+                alt="Gaming setup"
+            >
+            <div class="floating-card">
+                <span>✦ FEATURED EXPERIENCE</span>
+                <h3>GAME ON.</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+
+    <section class="categories">
+
+        <div class="category-heading">
+            <span class="section-tag">EXPLORE YOUR WORLD</span>
+            <h2>GAME <span>CATEGORIES</span></h2>
+        </div>
+
+        <div class="category-grid">
+
+            <button class="category-card" data-category="Action">
+                <span>⚔</span>
+                <h3>Action</h3>
+                <p>Epic adventures</p>
+            </button>
+
+            <button class="category-card" data-category="Adventure">
+                <span>🌌</span>
+                <h3>Adventure</h3>
+                <p>Explore worlds</p>
+            </button>
+
+            <button class="category-card" data-category="Racing">
+                <span>🏎</span>
+                <h3>Racing</h3>
+                <p>Feel the speed</p>
+            </button>
+
+            <button class="category-card" data-category="Sports">
+                <span>🏆</span>
+                <h3>Sports</h3>
+                <p>Play like a champion</p>
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Games -->
+
+    <section class="games-section" id="games">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-tag">YOUR NEXT ADVENTURE</span>
+                <h2>FEATURED <span>GAMES</span></h2>
+            </div>
+
+            <p>Discover your next favorite game.</p>
+        </div>
+
+        <div class="game-controls">
+
+            <div class="filters">
+                <button class="filter-btn active" data-category="All">All Games</button>
+                <button class="filter-btn" data-category="Action">Action</button>
+                <button class="filter-btn" data-category="Adventure">Adventure</button>
+                <button class="filter-btn" data-category="Racing">Racing</button>
+                <button class="filter-btn" data-category="Sports">Sports</button>
+            </div>
+
+            <select id="sortSelect">
+                <option value="default">Sort Games</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+                <option value="rating">Top Rated</option>
+            </select>
+
+        </div>
+
+        <div class="game-grid" id="gameGrid"></div>
+
+    </section>
+
+    <!-- Gaming Banner -->
+
+    <section class="gaming-banner" id="about">
+
+        <div class="banner-content">
+            <span class="section-tag">UNLOCK YOUR POTENTIAL</span>
+
+            <h2>PLAY HARD.<br><span>WIN BIG.</span></h2>
+
+            <p>
+                Every great adventure begins with one click.
+                Find your next challenge and enter a new world.
+            </p>
+
+            <a href="#games" class="primary-btn">FIND YOUR GAME ↗</a>
+        </div>
+
+        <div class="banner-image">
+            <img
+                src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=900"
+                alt="Gaming equipment"
+            >
+        </div>
+
+    </section>
+
+    <!-- Newsletter -->
+
+    <section class="newsletter" id="contact">
+
+        <span class="section-tag">JOIN THE COMMUNITY</span>
+
+        <h2>STAY IN THE <span>GAME.</span></h2>
+
+        <p>Get gaming updates, new releases and exclusive news.</p>
+
+        <form id="newsletterForm">
+            <input type="email" id="emailInput" placeholder="Enter your email..." required>
+            <button type="submit">JOIN NOW ↗</button>
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <a href="#home" class="logo">NEXUS<span>_</span></a>
+
+        <p>Explore. Play. Conquer.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 NEXUS GAMING. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Overlay -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Shopping Cart -->
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+            <h2>YOUR CART</h2>
+            <button id="closeCart">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartTotal">$0.00</strong>
+            </div>
+
+            <button id="checkoutBtn">CHECKOUT ↗</button>
+        </div>
+
+    </aside>
+
+    <!-- Game Details Popup -->
+
+    <div class="modal-overlay" id="modalOverlay">
+
+        <div class="game-modal" id="gameModal">
+
+            <button class="modal-close" id="closeModal">✕</button>
+
+            <img id="modalImage" src="" alt="Game cover">
+
+            <div class="modal-content">
+                <span id="modalCategory"></span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <h3 id="modalPrice"></h3>
+                <button id="modalAddCart">ADD TO CART +</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Toast -->
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
